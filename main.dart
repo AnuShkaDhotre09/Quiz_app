@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/quiz_screen.dart';
+import 'package:quiz_app/splashscreen.dart';
+import 'package:quiz_app/ss.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'QuiziOsa',
+        debugShowCheckedModeBanner: false,
+      title: 'QuiziVerse',
       theme: ThemeData(
 
         primarySwatch: Colors.blue,
       ),
-      home: QuizScreen()
+      home:ss1()
     );
   }
 }
